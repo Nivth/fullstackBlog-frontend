@@ -60,7 +60,7 @@ const PostStyle = styled.div`
   }
 `;
 export default function Post({ post }) {
-  const PF = "http://localhost:5000/images/";
+  const PF = "https://backend-fullstack-blog.herokuapp.com/images/";
   return (
     <PostStyle>
       <div className="post">
