@@ -134,7 +134,9 @@ export default function Settings() {
       updatedUser.profilePic = filename;
       try {
         await axios.post("/upload", data);
-      } catch (err) {}
+      } catch (err) {
+        console.log(err);
+      }
     }
     try {
       const res = await axios.put("/users/" + user._id, updatedUser);
